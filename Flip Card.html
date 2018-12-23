@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    
+  <style type="text/css">
+		body{
+			background:#3C5377;
+		}
+		.maincontainer{
+			position:absolute;
+			width:1748px;
+			height:1181px;
+			background:none;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+		}
+		.thecard{
+			position:relative;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			border-radius:10px;
+			transform-style:preserve-3d;
+			transition:all .8s ease;
+		}
+		.thecard:hover{
+			transform:rotateY(180deg);
+		}
+		.thefront{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			border-radius:10px;
+			backface-visibility:hidden;
+			overflow:hidden;
+			background:#ffc728;
+			color:#000;
+		}
+		.theback{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			border-radius:10px;
+			backface-visibility:hidden;
+			overflow:hidden;
+			background:#fafafa;
+			color:#333;
+			text-align:center;
+			transform:rotateY(180deg);
+		}
+		.thefront h1,.theback h1{
+			font-family:'zilla slab',sans-serif;
+			padding:30px;
+			font-weight:bold;
+			font-size:24px;
+			text-align:center;
+		}
+		.thefront p,.theback p{
+			font-family:'zilla slab',sans-serif;
+			padding:30px;
+			font-weight:normal;
+			font-size:12px;
+			text-align:center;
+		}
+</style></head>
+  <body>
+    <p>﻿
+  </p>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+  <title>CSS Card Flip</title>
+  <div class="maincontainer">
+    <div class="thecard">
+      <div class="thefront">
+        <img src="https://gallery.mailchimp.com/81503ace3e71ef47d36b1f20c/images/024a6629-2094-43bf-934f-8f490e44b141.png" alt="024a6629-2094-43bf-934f-8f490e44b141.png">
+      </div>
+      <div class="theback">
+        <img src="https://gallery.mailchimp.com/81503ace3e71ef47d36b1f20c/images/aab43efc-3351-4a00-b32f-ce547a937399.png" alt="aab43efc-3351-4a00-b32f-ce547a937399.png">
+      </div>
+    </div>
+  </div>
+  
+  ﻿</body>
+</html>
